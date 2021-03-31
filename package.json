@@ -1,0 +1,21 @@
+{
+  "name": "melibiose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "melibiose.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "moment": "^2.24.0",
+    "mongodb": "^3.4.0",
+    "mongoose": "^5.9.2",
+    "node.js": "^0.0.0",
+    "paypal-rest-sdk": "^1.8.1",
+    "paypal-nvp-api": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

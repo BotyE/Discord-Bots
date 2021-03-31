@@ -1,0 +1,152 @@
+% !TeX encoding = UTF-8
+
+%-------------------% 
+% 	  Преамбула	    %
+%					%
+
+\documentclass[12pt]{article}  %  Класса article хватит для курсовой и диплома 
+
+\usepackage[utf8x]{inputenc}   % Подключение пакета inputenc и задание кодировки
+\usepackage[english, russian]{babel}    % Локализация 
+\usepackage{amsmath}		   % Пакет специальных символов
+\usepackage{amsfonts}		   
+\usepackage{amssymb}		   % Этих пакетов хватает для набора большинства спецсимволов	
+\usepackage{graphicx}          % Графика
+\usepackage{hyperref} 		   % Навигация по ссылкам в документе
+\usepackage{cite} 		       % Продвинутое цитирование
+\usepackage[a4paper, top=25mm, left=30mm, right=10mm, bottom=25mm]{geometry} % Поля 
+
+
+
+
+
+\begin{document}               % Пример окружения: document 
+
+
+
+\section{Модель}
+
+Рассматривается система уравнений Лэнга–Кобаяши [14] для комплексной амплитуды электрического поля $E(t)$ и инверсии носителей $y(t)$:
+
+\begin{equation} \label{main_equation1}
+ \frac{dE}{dt} = \dfrac{1}{2}\upsilon\left(1 + i\alpha\right)\left(y-1\right)E+\gamma_{0}e^{i\varphi_{0}}E\left(t-T\right),
+ \end{equation}
+ \begin{equation} \label{main_equation2}
+ \frac{dy}{dt} = q-y-y\vert{E}\vert^{2},
+ \end{equation}
+ где
+ 
+ $t$ – текущеевремя,нормированноенавремярелаксацииинверсиинаселенностей;
+ 
+ $\upsilon$ – скорость затухания фотонов в резонаторе, нормированная на скорость релаксации инверсии населенностей;
+ 
+ $q$ – скорость накачки (пропорциональна току накачки);
+ 
+ $\alpha$ – коэффициент уширения линии, ответственный за нелинейное взаимодействие между амплитудой и фазой поля, обычно $\alpha \sim 6$, но специальным образом может быть уменьшено до нуля;
+ 
+ $T$ – время прохода по внешнему резонатору, нормированное на время релаксации инверсии населенностей;
+ 
+ $\varphi_{0} = T\omega_{0}$, $\omega_{0}$ – частота генерации уединенного лазера (без внешней обратной связи);
+ 
+ $\gamma_{0}$ – коэффициент обратной связи, пропорциональный коэффициенту отражения излучения от внешнего зеркала.
+ 
+ Типичные значения времени затухания фотонов в резонаторе полупроводнико-вых лазеров составляют  1–2 пикосекунды, а время релаксации инверсии носителей — 1–2 наносекунды, поэтому $\upsilon \sim 10^{3}$ является большим параметром. При изменении длины внешнего резонатора от 30 до 300 см нормированное время задержки $\tau$ изменяется от 1 до 10.
+ 
+ Введем обозначения 
+ $$\omega = \dfrac{1}{2}\upsilon\left(1 + i\alpha\right), c=\dfrac{2\gamma_{0}}{\upsilon\left(1+\alpha^{2}\right)^{1/2}}, \gamma = \dfrac{1}{2}c\upsilon, e^{i\varphi}= \dfrac{1 - i\alpha}{\left(1+\alpha^{2}\right)^{1/2}}e^{i\varphi_{0}}.$$
+ 
+ Тогда система (\ref{main_equation1}), (\ref{main_equation2}) может быть записана в стандартном для задач с управлением виде
+ \begin{equation} \label{main_equation3}
+ \frac{dE}{dt} = \omega\left(y-\left(1-c\right)\right)E+\gamma\left(1+i\alpha\right)[e^{i\varphi}E\left(t-T\right)-E],
+  \end{equation}
+ \begin{equation}\label{main_equation4}
+ \frac{dy}{dt} = q-y-y\vert{E}\vert^{2}.
+ \end{equation}
+ 
+ В данной работе выдвигаем предположение, открывающее путь к применению асимптотических методов для исследования динамических свойств системы (\ref{main_equation3}), (\ref{main_equation4}). Оно состоит в том, что коэффициент $\gamma$, называемый коэффициентом управления, предполагается достаточно большим
+\begin{equation} \label{main_equation5}
+\gamma \gg 0.
+\end{equation}
+Отметим, что хотя для лазеров это предположение не является вполне естественным, тем не менее результаты, полученные при условии (\ref{main_equation5}), позволяют лучше понимать тенденции изменения динамики при увеличении $\gamma$ (усилении оптической ОС).
+
+Поставим задачу исследовать поведение решений системы (\ref{main_equation3}), (\ref{main_equation4}) при условии (\ref{main_equation5}).
+
+\section{Сведение к параболической краевой задаче}
+
+Разделим (\ref{main_equation3}) на $\gamma$, получаем 
+\begin{equation} \label{main_equation6}
+\varepsilon\frac{dE}{dt} = \varepsilon\omega\left(y-\left(1-c\right)\right)E+\left(1+i\alpha\right)[e^{i\varphi}E\left(t-T\right)-E],
+\end{equation}
+где $\varepsilon = \gamma^{-1} \ll 1.$
+
+Рассмотрим сначала одно квазилинейное уравнение
+\begin{equation} \label{main_equation7}
+\varepsilon\frac{dE}{dt} = \varepsilon f(\tau,E)+\left(1+i\alpha\right)[e^{i\varphi}E\left(t-T\right)-E],
+\end{equation}
+в котором $\tau =\varepsilon t$ и $f(\tau,E)$ – произвольная достаточно гладкая и ограниченная при каждом значении $E$ и $\tau\rightarrow\infty$ функция, для которой выполняются условия:
+\begin{equation} \label{main_equation8}
+f(\tau,0)\equiv 0 \quad \mbox{и} \quad \forall\psi \quad f(\tau,e^{i\varphi}E) \equiv e^{i\varphi}f(\tau,E)
+\end{equation}
+Динамика такого типа уравнений изучалась в [15].
+
+Сформулируем основные результаты из [15] применительно к (\ref{main_equation7}). Начнем с простого утверждения.
+
+{\textbf{Утверждение 1. } \textit{При каждом фиксированном $\alpha \ne 0$ для любого $r$ найдется
+		такое $\varepsilon_{0} > 0,$ что при всех $\varepsilon \in (0,\varepsilon_{0})$ в шаре $S(0,r)$ (радиуса $r$ с центром в нуле) фазового пространства $C_{[-T,0]}$ не существует аттрактора уравнения (\ref{main_equation7}).}} 
+	
+Тем самым установившиеся решения (\ref{main_equation7}) неограничены по $\varepsilon$ при $\varepsilon \rightarrow 0.$ Отсюда следует естественное ограничение на параметр $\alpha$. Этот параметр при условии (\ref{main_equation5}) должен быть достаточно мал. Фактор уширения линии $\alpha$ играет важную роль в таких динамических процессах, как модуляционный отклик и чипирование частоты. Как уже отмечалось, для полупроводниковых лазеров $\alpha \sim 6$ и длина волны излучения рассматриваются как фиксированные параметры. Однако, сканируя длину волны излучения в пределах линии усиления уединенного лазера без изменения профиля линии, может быть достигнуто существенное уменьшение $\alpha$ [16] (даже отрицательные значения $\alpha$) при длине волны значительно короче длины волны, соответствующей максимуму усиления.
+
+Таким образом, ниже будем полагать, что для некоторого фиксированного значения $\alpha_{1}$ имеем
+\begin{equation} \label{main_equation9}
+\alpha = \varepsilon^{1/2}\alpha_{1}.
+\end{equation}
+
+Далее введем несколько обозначений. Фиксируем произвольно вещественное значение $z \ne 0.$ Через $\theta = \theta(\varepsilon,z)$ обозначим такую величину из полуинтервала [0, 1), которая дополняет значение $z\varepsilon^{-1/2}$ до целого. Также через $\upsilon(\tau,x)$ будем обозначать $T$-периодическую по второму аргументу комплекснозначную функцию.
+
+В [15] показано, что для каждого $z \ne 0$ имеется асимптотическое по невязке решение уравнения (\ref{main_equation7}) вида
+$$ E(t,\varepsilon) = exp(i\dfrac{\varphi}{T}(1-\dfrac{\varepsilon}{T})t)\upsilon(\tau,x)+O(\varepsilon^{1/2}) ),$$
+
+где $\tau = \varepsilon t, x=[(z\varepsilon^{-1/2} +\theta)-(z\varepsilon^{1/2}+\varepsilon\theta)T^{-1}]t$ и функция $\upsilon(\tau,x)$ является решением краевой задачи параболического типа:
+
+\begin{equation} \label{main_equation10}
+T\dfrac{\partial\upsilon}{\partial\tau}=\dfrac{1}{2}z^{2}\dfrac{\partial^{2}\upsilon}{\partial x^{2}}+i\alpha_{1}z\dfrac{\partial\upsilon}{\partial x} + f(\tau,\upsilon),
+\end{equation}
+\begin{equation} \label{main_equation11}
+\upsilon(\tau,x+T) = \upsilon(\tau,x)
+\end{equation}
+
+После того, как некоторое ограниченное при $\tau\rightarrow\infty$ решение $\upsilon(\tau,x)$ этой краевой задачи определено, рассмотрим уравнение (\ref{main_equation4}), в котором вместо $E(t, \varepsilon)$ принимаем\\ $exp(i\dfrac{\varphi}{T}(1-\dfrac{\varepsilon}{T})t)\upsilon(\varepsilon t, (z\varepsilon^{-1/2}+\theta)(1-\dfrac{\varepsilon}{T})t). $
+\begin{equation} \label{main_equation12}
+\dfrac{dy}{dt}=q-y(1+\vert{\upsilon}\vert^{2}).
+\end{equation}
+
+Воспользуемся известными результатами об усреднении в обыкновенных дифференциальных уравнениях с быстро осциллирующими периодическими коэффициентами.
+
+На основании этих результатов заключаем, что с точностью до величины порядка $O(\varepsilon^{1/2})$ решение $y(t, \varepsilon)$ уравнения (\ref{main_equation12}) совпадает с решением $y_{0}(t, \varepsilon)$ (с теми же начальными условиями) более простого уравнения
+\begin{equation} \label{main_equation13}
+\dfrac{dy_{0}}{dt}=q-y_{0}\left(1+\dfrac{1}{T}\int_{0}^{T}\vert{\upsilon(\varepsilon t,s)}\vert^{2}ds\right).
+\end{equation}
+
+На следующем этапе воспользуемся тоже хорошо известными результатами (см., например [17]) о поведении решений уравнений с медленно меняющимися коэффициентами. В правой части (\ref{main_equation13}) фигурирует функция $g(t) =\dfrac{1}{T}\int_{0}^{T}\vert{\upsilon(\varepsilon t,s)}\vert^{2}ds,$ которая зависит от медленно меняющейся переменной $\tau = \varepsilon t.$ Отсюда приходим к выводу,что решения (\ref{main_equation13}) с точностью до $O(\varepsilon^{1/2})$ совпадают при достаточно больших $\tau$ (порядка $\varepsilon^{-1}$) с функцией
+$$y_{1}(\tau)=q\left(1+\dfrac{1}{T}\int_{0}^{T}\vert{\upsilon(\tau,s)}\vert^{2}ds\right)^{-1}.$$
+
+Наконец, полагаем в (\ref{main_equation10})
+$$f(\tau,\upsilon)=\omega\upsilon\left[q\left(1+\dfrac{1}{T}\int_{0}^{T}\vert{\upsilon(\tau,s)}\vert^{2}ds\right)^{-1}-\left(1-c\right)\right]$$
+Основной результат состоит в следующем.
+
+{\textbf{Утверждение 2. } \textit{Пусть при некотором $z \ne 0$ функция $\upsilon(\tau,x)$ является ограниченным при $\tau\rightarrow\infty$ решением краевой задачи}}
+\begin{equation} \label{main_equation14}
+T\dfrac{\partial\upsilon}{\partial\tau} = \dfrac{1}{2}z^{2}\dfrac{\partial^{2}\upsilon}{\partial x^{2}}+i\alpha_{1}z\dfrac{\partial\upsilon}{\partial x}+\omega\upsilon\left[q\left(1+\dfrac{1}{T}\int_{0}^{T}\vert{\upsilon(\tau,s)}\vert^{2}ds\right)^{-1}-(1-c)\right],
+\end{equation}
+\begin{equation} \label{main_equation15}
+\upsilon(\tau,x+T)=\upsilon(\tau,x).
+\end{equation}
+Тогда система уравнений (\ref{main_equation3}), (\ref{main_equation4}) имеет такое асимптотическое по невязке решение $E(t, \varepsilon), y(t, \varepsilon),$ для которого
+\begin{equation} \label{main_equation16}
+E(t,\varepsilon) = exp(i\dfrac{\varphi}{T}(1-\dfrac{\varepsilon}{T})t)\upsilon(\tau,x)+O(\varepsilon^{1/2}) ),
+\end{equation}
+\begin{equation} \label{main_equation17}
+y(t,\varepsilon)= q\left(1+\dfrac{1}{T}\int_{0}^{T}\vert{\upsilon(\tau,s)}\vert^{2}ds\right)^{-1}+O(\varepsilon^{1/2}),
+\end{equation}
+где $\tau=\varepsilon t, x= (z\varepsilon^{-1/2}+\theta)(1-\dfrac{\varepsilon}{T})t.$
+\end{document}
