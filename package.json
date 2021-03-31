@@ -1,0 +1,22 @@
+{
+  "name": "support-agency",
+  "version": "1.0.1",
+  "description": "Support Agency BOT",
+  "main": "support.js",
+  "scripts": {
+    "test": "=test"
+  },
+  "keywords": [
+    "support",
+    "agency",
+    "help"
+  ],
+  "author": "BotyE",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "mongodb": "^3.6.1",
+    "mongoose": "^5.9.14"
+  },
+  "devDependencies": {}
+}
