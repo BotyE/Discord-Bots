@@ -1,0 +1,2 @@
+node measure.js
+pause

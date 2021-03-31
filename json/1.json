@@ -1,0 +1,162 @@
+{
+  "1":{
+"activityname":"CS:GO",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает команда победителей.",
+"picture": "",
+"voice": 2,
+"limit": 10
+},
+"2":{
+  "activityname":"Brawlhalla",
+  "activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+  "name":"Приз получает один победивший игрок.",
+  "picture": "",
+  "voice": 1,
+  "limit": 8
+  },
+"3":{
+"activityname":"Dota 2",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает команда победителей.",
+"picture": "",
+"voice": 2,
+"limit": 10
+},
+"4":{
+"activityname":"Minecraft",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает команда победителей или один победитель, в завистимости от режима.",
+"picture": "",
+"voice": 2,
+"limit": 10
+},
+"5":{
+"activityname":"GTA 5",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает тройка победителей.",
+"picture": "",
+"voice": 1,
+"limit": 10
+},
+"6":{
+"activityname":"Мафия",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает команда победителей.",
+"picture": "",
+"voice": 1,
+"limit": 11
+},
+"7":{
+"activityname":"Своя игра",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает тройка победителей.",
+"picture": "",
+"voice": 1,
+"limit": 10
+},
+"8":{
+"activityname":"Монополия",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает тройка победителей.",
+"picture": "",
+"voice": 1,
+"limit": 5
+},
+"9":{
+"activityname":"Данетки",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает команда победителей.",
+"picture": "",
+"voice": 1,
+"limit": 9
+},
+"10":{
+"activityname":"Соло",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает тройка победителей.",
+"picture": "",
+"voice": 1,
+"limit": 10
+},
+"11":{
+"activityname":"Корова 006",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает тройка победителей.",
+"picture": "",
+"voice": 1,
+"limit": 10
+},
+"12":{
+"activityname":"Jack Box",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает тройка победителей.",
+"picture": "",
+"voice": 1,
+"limit": 8
+},
+"13":{
+"activityname":"Secret Hitler",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает команда победителей.",
+"picture": "",
+"voice": 1,
+"limit": 10
+},
+"14":{
+"activityname":"Alias",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает команда победителей.",
+"picture": "",
+"voice": 1,
+"limit": 8
+},
+"15":{
+"activityname":"Пазлы",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает тройка победителей.",
+"picture": "",
+"voice": 1,
+"limit": 10
+},
+"16":{
+"activityname":"Крокодил",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает тройка победителей.",
+"picture": "",
+"voice": 1,
+"limit": 10
+},
+"17":{
+"activityname":"OSU!",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Приз получает один победивший игрок.",
+"picture": "",
+"voice": 1,
+"limit": 8
+},
+"18":{
+"activityname":"Pummel Party",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает тройка победителей.",
+"picture": "",
+"voice": 1,
+"limit": 8
+},
+"19":{
+"activityname":"Codenames",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Призы получает команда победителей.",
+"picture": "",
+"voice": 1,
+"limit": 10
+},
+"20":{
+"activityname":"Имаджинариум",
+"activityrule":"https://discordapp.com/channels/617776960097091783/652889218179268618/655710116334665740",
+"name":"Приз получает один победивший игрок.",
+"picture": "",
+"voice": 1,
+"limit": 10
+}
+}
